@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Providers from "@/components/providers";
 
 
 const  poppins = Poppins({
@@ -10,8 +11,8 @@ const  poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Storybook AI",
-  description: "AI powered educational story generator for kids",
+  title: "Our Saas Template",
+  description: "A starter template for SaaS applications using Next.js and Supabase.",
 };
 
 export default function RootLayout({
@@ -24,7 +25,9 @@ export default function RootLayout({
       <body suppressHydrationWarning
         className={`${poppins.variable} antialiased` }
       >
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

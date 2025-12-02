@@ -1,5 +1,5 @@
 {
-  "name": "storybook-ai",
+  "name": "saas-template-nextjs-supabase",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "@radix-ui/react-slot": "^1.2.4",
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.81.1",
+    "@tanstack/react-query": "^5.90.11",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.553.0",
